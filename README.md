@@ -15,11 +15,15 @@ If the "Do you want to check luggage" checkbox is checked, the form should re-di
 
 # Part 2
 
-Write a PHP program called processForm2.php that will be executed when the luggage.html submits to it. This program should gather the number of bags that weigh 10KG or less that the passenger intends bring and the number of bags that weigh between 10 and 20KG. The program should gather the number of under-ten-kilo bags and assign it to a variable called $_SESSION['subTenKG'] and the number of ten-to-twenty-kilo bags and assign it to a session variable called $_SESSION['overTenKG'].
+Write a PHP program called processForm2.php that will be executed when the luggage.html submits to it. This program should gather the number of bags that weigh 10KG or less that the passenger intends bring and the number of bags that weigh between 10 and 20KG. The program should gather the number of under-ten-kilo bags and assign it to a variable called $_SESSION['subTenKG'] and the number of ten-to-twenty-kilo bags and assign it to a session variable called $_SESSION['overTenKG']. After storing the information in session variables the program should redirect the browser to the page finalStep.php
 
 # Part 3
 
-Modify the program finalStep.php so that it outputs the data stored from the flightBooking.html and luggage.html forms. This program should list out the passenger's firstname, surname and luggage details and ask the user to confirm the details are correct. Make the necessary adjustments to the program so that program echoes out the values contained in various session variables. Make sure that an if statement checks that the $_SESSION['luggage'] session variable is set before attempting to output the session variables relating to luggage, if you don't do this there will undefined index errors in relation to those variables. 
+Modify the program finalStep.php so that it outputs the data stored in the session variables which was recorded from the flightBooking.html and luggage.html forms. This program should list out the passenger's firstname, surname and luggage details and ask the user to confirm the details are correct. Make the necessary adjustments to the program so that it echoes out the values contained in various session variables. Make sure that an if statement checks that the $_SESSION['luggage'] session variable is set before attempting to output the session variables relating to luggage, if you don't do this there will undefined index errors in relation to those variables. If the confirm checkbox is checked the program should redirect the browswer to confirm.php
+
+# Part 4
+
+Create the database for flightBookings stored in the sql file in the repo. If Parts 1, 2, and 3 have been completed correctly the data from the session variables should be inserted into the DB when the confirm checkbox is checked and the submit button is clicked.
 
 
 
