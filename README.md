@@ -11,7 +11,7 @@ This assignment has the following objectives
 
 Write a PHP program called processForm1.php that when the flightBooking.html form has been submitted, will start a session, gather all the data from the flightBooking.html form and store it in session variables. The passenger's firstname should be stored in a session variable called $_SESSION['passengerFN'] and the surname should be stored in $_SESSION['passengerSN']. If the luggage checkbox is checked a variable called $_SESSION['luggage'] should be set to 1, if it is unchecked it should be set to 0.
 
-If the "Do you want to check luggage" checkbox is checked, the form should re-direct the browswer to the form luggage.html to gather the luggage information. If the luggage checkbox is not checked the program should redirect to the finalStep.php page. ***Note to use the checkbox input tag from the form you must use the isset() function to verify if the checkbox has been checked***.
+If the "Do you want to check luggage" checkbox is checked, the form should re-direct the browswer to the form luggage.html to gather the luggage information. If the luggage checkbox is not checked the program should redirect to the finalStep.php page. ***Note - to use the checkbox input tag from the form you must use the isset() function to verify if the checkbox has been checked***.
 
 # Part 2
 
